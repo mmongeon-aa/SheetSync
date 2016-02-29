@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-execfile(os.path.join('sheetsync','version.py'))
+exec(open(os.path.join('sheetsync','version.py')).read())
 
 with open('README.rst') as fh:
     long_description = fh.read()
